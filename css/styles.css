@@ -110,9 +110,9 @@ body{
     background: var(--red);
     color:#fff;
 }
-    .menu .list-container ul li a.active:hover{
-        background: var(--blue);
-    }
+.menu .list-container ul li a.active:hover{
+    background: var(--blue);
+}
 .menu .list-container ul li a:hover{
     background: var(--red);
     color:#fff;
@@ -176,9 +176,6 @@ body{
         color:var(--red);
     }
 }
-
-/** Navegation Menu **/
-
 /** IMG Header **/
 .img-header{
     position: relative;
@@ -328,7 +325,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%; 
-    background: url(../img/img-8.jpg);
+    background: url(../img/img-23.jpg);
     background-attachment:fixed;
     background-position: center;
     background-size: cover;
@@ -350,10 +347,13 @@ body{
 .our-projects .container-project{
     width: 90%;
     margin:auto;
+    padding-bottom: 30px;
     padding-top: 100px;
 }
 .our-projects .container-project .project-title{
-    border:2px solid #fff;
+    border:2px solid var(--blue);
+    background: var(--black);
+    border-radius: 0px 10px 10px 10px;
     padding:10px;
     text-align: center;
     width: 50%;
@@ -361,14 +361,71 @@ body{
 }
 .our-projects .container-project .project-title h2{
     font-size: 40px;
-    color: #fff;
+    color: var(--blue);
     font-weight: normal;
 }
 .our-projects .container-project .project-title hr{
-   background:#fff;
+   background: var(--blue);
    width: 50%;
    height: 3px;
    margin: 10px auto;
+}
+.our-projects .container-project .sheloTop{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.our-projects .container-project .sheloTop ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.our-projects .container-project .sheloTop ul li{
+    border: 2px solid var(--red);
+    margin: 10px;
+    border-radius: 5px;
+    background: var(--black);
+    list-style: none;
+    align-content: center;
+    padding: 5px;
+}
+.our-projects .container-project .sheloTop ul li a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.our-projects .container-project .sheloSecciones{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.our-projects .container-project .sheloSecciones ul{
+
+}
+.our-projects .container-project .sheloSecciones ul li{
+    background: var(--black);
+    border: 2px solid var(--blue);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+.our-projects .container-project .sheloSecciones ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--white);
+}
+@media only screen and (max-width: 773px){
+    .our-projects .container-project .sheloSecciones ul li a{
+        font-size: 12px;
+    }
 }
 .our-projects .container-project .project-img{
     width: 100%;

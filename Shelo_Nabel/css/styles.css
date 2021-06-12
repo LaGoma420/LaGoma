@@ -20,6 +20,7 @@ body{
 .go-top{
     position: fixed;
     bottom: 100px;
+    padding: 30px;
     right: -100%;
     width: 50px;
     height: 50px;
@@ -102,13 +103,16 @@ body{
     transition: 0.3s;
     font-size: 16px;
 }
+.menu .list-container ul li a:hover{
+    color: var(--blue);
+}
 .menu .list-container ul li a.active{
     background: var(--red);
     color:#fff;
 }
-    .menu .list-container ul li a.active:hover{
-        background: var(--blue);
-    }
+.menu .list-container ul li a.active:hover{
+    background: var(--blue);
+}
 .menu .list-container ul li a:hover{
     background: var(--red);
     color:#fff;
@@ -172,18 +176,16 @@ body{
         color:var(--red);
     }
 }
-
-/** Navegation Menu **/
-
 /** IMG Header **/
 .img-header{
     position: relative;
     width: 100%;
     height: 100vh;
-    background:url(../img/shelo1.jpeg);
+    background:url(../img/shelo_3.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    color: rgba(0,0,0,0);
 }
 .img-header .welcome{
     position: absolute;
@@ -227,7 +229,7 @@ body{
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 .img-header .welcome > button:hover{
     background:var(--blue);
@@ -240,7 +242,7 @@ body{
 }
 @media only screen and (max-width:590px){
     .img-header .welcome h1{font-size: 30px;}
-    .img-header .welcome hr{width: 100px;}
+    .img-header .welcome hr{width: 200px;}
     .img-header .welcome p{font-size: 17px;}
     .img-header .welcome > button{width: 100px; font-size: 17px;}
     .img-header .welcome > button:hover{width: 100px; font-size: 20px;}
@@ -272,55 +274,23 @@ body{
     line-height: 35px;
     margin:10px 0px;
 }
-
-.ContSectionCat{
-    background: none;
-    margin-top: 70px;
-    margin-bottom: 50px;
-}
-.contenedor-CatShel{
-    width: 90vw;
-    height: 90vh;
-    margin: auto;
+.acerca-de .info-container .about-gallery{
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 50px 0px;
 }
-.contenedor-CatShel iframe{
-    width: 80vw;
-    height: 80vh;
-    border-radius: 12px;
-    margin: auto;
-}
-.color-boton1{
-    margin-top: 15px;
-    width: 120px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    background: var(--red);
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    color: #fff;
+.acerca-de .info-container .about-gallery img{
+    width: calc(33.333% - 10px);
+    height: 300px;
+    margin: 10px 10px;
+    object-fit: cover;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.5s;
 }
-.color-boton1:hover{
-    background: var(--blue);
+.acerca-de .info-container .about-gallery img:hover{
+    height: 320px;
 }
-.color-boton1 a{
-    font-family: 'fredoka One', sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    color: #fff;
-}
-
-
-
-
 .acerca-de .info-container .about-more{
     width: 100%;
     display: flex;
@@ -342,6 +312,10 @@ body{
 }
 .acerca-de .info-container .about-more button:hover{background: var(--blue);}
 
+@media only screen and (max-width:773px){
+    .acerca-de .info-container .about-gallery{flex-direction: column;}
+    .acerca-de .info-container .about-gallery img{width: 100%;}
+}
 @media only screen and (max-width:590px){
     .acerca-de .info-container h1{font-size: 30px;}
     .acerca-de .info-container p{font-size: 15px;}
@@ -374,24 +348,86 @@ body{
 .our-projects .container-project{
     width: 90%;
     margin:auto;
+    padding-bottom: 30px;
     padding-top: 100px;
 }
 .our-projects .container-project .project-title{
-    padding-top: 30px;
+    border:2px solid var(--red);
+    background: var(--black);
+    border-radius: 0px 10px 10px 10px;
+    padding:10px;
     text-align: center;
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 .our-projects .container-project .project-title h2{
     font-size: 40px;
-    color: #fff;
+    color: var(--red);
     font-weight: normal;
 }
 .our-projects .container-project .project-title hr{
-   background:#fff;
+   background: var(--red);
+   border: 1px solid var(--red);
    width: 50%;
    height: 3px;
    margin: 10px auto;
+}
+.our-projects .container-project .sheloTop{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.our-projects .container-project .sheloTop ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.our-projects .container-project .sheloTop ul li{
+    border: 2px solid var(--red);
+    margin: 10px;
+    border-radius: 5px;
+    background: var(--black);
+    list-style: none;
+    align-content: center;
+    padding: 5px;
+}
+.our-projects .container-project .sheloTop ul li a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.our-projects .container-project .sheloSecciones{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.our-projects .container-project .sheloSecciones ul{
+
+}
+.our-projects .container-project .sheloSecciones ul li{
+    background: var(--black);
+    border: 2px solid var(--blue);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+.our-projects .container-project .sheloSecciones ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--white);
+}
+@media only screen and (max-width: 773px){
+    .our-projects .container-project .sheloSecciones ul li a{
+        font-size: 12px;
+    }
 }
 .our-projects .container-project .project-img{
     width: 100%;
@@ -409,14 +445,15 @@ body{
   cursor: pointer;
 }
 @media only screen and (max-width:773px){
-    .our-projects .container-project .project-img img{width: 150px; margin-bottom: 30px;}
-}
-@media only screen and (max-width:446px){
-    .our-projects .container-project .project-title h2{font-size: 30px;}
     .our-projects .container-project .project-img img{width: 120px; margin-bottom: 30px;}
 }
+@media only screen and (max-width:446px){
+    .our-projects .container-project .project-title h2{font-size: 16px;}
+    .project-title{width: 70%; border: 1px solid #fff;}
+    .project-title hr{width: 70%; height: 2px;}
+}
 
-/** Testimonios **/
+/** Ubicacion **/
 .testimonios{
     width: 100%;
     margin-top: 120px;
@@ -431,6 +468,9 @@ body{
     font-weight: normal;
     color: var(--black);
     margin-bottom: 10px;
+}
+@media only screen and (max-width:447px){
+    .testimonios .testimonios-title h2{font-size: 35px;}
 }
 .testimonios .testimonios-title hr{
     width: 60%;
@@ -530,17 +570,19 @@ body{
     padding:15px;
 }
 .footer .footer-content .footer-title h2{
-    font-size: 35px;
-    font-weight: 400;
+    font-size: 40px;
     color: #fff;
     text-align: center;
     margin-bottom: 5px;
+}
+@media only screen and (max-width:446px){
+    .footer .footer-content .footer-title h2{font-size: 25px;}
 }
 .footer .footer-content .footer-title hr{
     background: #fff;
     height: 2px;
     width: 80%;
-    margin: auto;
+    margin:auto;
 }
 .footer .footer-content .datos{
     text-align: left;
@@ -559,6 +601,8 @@ body{
 @media only screen and (max-width:390px){
     .footer .footer-content .datos i{font-size: 17px;}
 }
+
+
 
 
 

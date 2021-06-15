@@ -453,7 +453,7 @@ body{
     .project-title hr{width: 70%; height: 2px;}
 }
 
-/** Ubicacion **/
+/** Catalogo **/
 .testimonios{
     width: 100%;
     margin-top: 120px;
@@ -477,6 +477,9 @@ body{
     height: 2px;
     margin:auto;
     background: var(--black);
+}
+.testimonios .catalogo{
+    margin-bottom: 20px;
 }
 .testimonios .box-testimonio{
     width: 90%;

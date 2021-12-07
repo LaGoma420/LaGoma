@@ -334,7 +334,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%; 
-    background: url(../img/img-14.jpg);
+    background: url(../img/img-23.jpg);
     background-attachment:fixed;
     background-position: center;
     background-size: cover;
@@ -360,7 +360,7 @@ body{
     padding-top: 100px;
 }
 .our-projects .container-project .project-title{
-    border:2px solid var(--red);
+    border:2px solid var(--blue);
     background: var(--black);
     border-radius: 0px 10px 10px 10px;
     padding:10px;
@@ -370,18 +370,18 @@ body{
 }
 .our-projects .container-project .project-title h2{
     font-size: 40px;
-    color: var(--red);
+    color: var(--blue);
     font-weight: normal;
 }
 .our-projects .container-project .project-title hr{
-   background: var(--red);
-   border: 1px solid var(--red);
+   background: var(--blue);
+   border: 1px solid var(--blue);
    width: 50%;
    height: 3px;
    margin: 10px auto;
 }
 .our-projects .container-project .project-title p{
-    color: var(--red);
+    color: var(--blue);
 }
 .our-projects .container-project .sheloTop{
     padding: 15px;
@@ -397,13 +397,14 @@ body{
     justify-content: center;
 }
 .our-projects .container-project .sheloTop ul li{
-    border: 2px solid var(--red);
+    border: 2px solid var(--blue);
     margin: 10px;
     border-radius: 5px;
     background: var(--black);
     list-style: none;
     align-content: center;
-    padding: 5px;
+    padding: 10px 30px;
+    text-align: center;
 }
 .our-projects .container-project .sheloTop ul li a{
     width: 100%;
@@ -411,6 +412,18 @@ body{
     text-decoration: none;
     color: #fff;
     padding: 10px;
+}
+.our-projects .container-project .sheloTop ul li a p{
+    font-size: 20px;
+}
+.our-projects .container-project .sheloTop ul li a img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px
+}
+.our-projects .container-project .sheloTop ul li a img:hover{
+    width: 160px;
+    height: 160px;
 }
 @media only screen and (max-width: 773px){
     .our-projects .container-project .sheloTop ul{
@@ -423,9 +436,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.our-projects .container-project .sheloSecciones ul{
-
 }
 .our-projects .container-project .sheloSecciones ul li{
     background: var(--black);

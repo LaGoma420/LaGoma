@@ -234,6 +234,11 @@ body{
     background:var(--blue);
     font-size: 23px;
 }
+.img-header .welcome > button >a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 3px;
+}
 
 @media only screen and (max-width:773px ){
     .img-header .welcome h1{font-size: 40px;}
@@ -393,7 +398,7 @@ body{
     padding: 5px;
 }
 .our-projects .container-project .sheloTop ul li p{
-    color: white;
+    color: var(--white);
     text-align: center;
     font-size: 14px;
 }
@@ -457,6 +462,9 @@ body{
 .testimonios{
     width: 100%;
     margin-top: 120px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
 }
 .testimonios .testimonios-title{
     width: 50%;
@@ -477,6 +485,17 @@ body{
     height: 2px;
     margin:auto;
     background: var(--black);
+}
+.testimonios a{
+    border: 2px solid var(--blue);
+    border-radius: 15px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    background: var(--red);
+    color: var(--white);
+    margin-bottom: 10px;
 }
 .testimonios .box-testimonio{
     width: 90%;

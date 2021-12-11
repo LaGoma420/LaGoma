@@ -236,6 +236,36 @@ body{
     background:var(--blue);
     font-size: 23px;
 }
+.img-header .welcome .btnContent{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.img-header .welcome .btnContent #btnCatalogo {
+    width: 170px;
+    height: 40px;
+    background: var(--blue);
+    border:1px solid var(--red);
+    border-radius: 24px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.img-header .welcome .btnContent #btnCatalogo:hover{
+    background:var(--red);
+    border:1px solid var(--blue);
+    font-size: 23px;
+}
+.img-header .welcome .btnContent #btnCatalogo a{
+    text-decoration: none;
+    color: var(--white);
+}
 
 @media only screen and (max-width:773px ){
     .img-header .welcome h1{font-size: 40px;}
@@ -564,6 +594,34 @@ body{
     .testimonios .box-testimonio .card-testimonio{width: 100%;}
     .testimonios .box-testimonio .card-testimonio .testimonio-text h4{font-size: 25px;}
     .testimonios .box-testimonio .card-testimonio .testimonio-text p{font-size: 17px; line-height: 35px;}
+}
+.testimonios .btnContent{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.testimonios .btnContent #btnCatalogo {
+    width: 170px;
+    height: 40px;
+    background: var(--blue);
+    border-radius: 24px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.testimonios .btnContent #btnCatalogo:hover{
+    background:var(--red);
+    font-size: 23px;
+}
+.testimonios .btnContent #btnCatalogo a{
+    text-decoration: none;
+    color: var(--white);
 }
 
 /** Footer **/

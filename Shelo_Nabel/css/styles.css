@@ -305,6 +305,11 @@ body{
     line-height: 35px;
     margin:10px 0px;
 }
+.acerca-de .video_shelo{
+    margin: auto;
+    width: 90%;
+    height:350px;
+}
 .acerca-de .queSomos_hijo{
     display: flex;
     flex-direction: column;
@@ -353,10 +358,12 @@ body{
 @media only screen and (max-width:773px){
     .acerca-de .info-container .about-gallery{flex-direction: column;}
     .acerca-de .info-container .about-gallery img{width: 100%;}
+    .acerca-de .video_shelo{height: 300px;}
 }
 @media only screen and (max-width:590px){
     .acerca-de .info-container h1{font-size: 30px;}
     .acerca-de .info-container p{font-size: 15px;}
+    .acerca-de .video_shelo{height: auto;}
 }
 
 /** Nuestros Servicios **/
